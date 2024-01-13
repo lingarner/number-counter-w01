@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="./toggle.js"></script>
+</head>
+<body class="flex justify-center w-full">
+    <main class="max-w-500" style="max-width:500px">
+        <div class="flex flex-col text-center border-2 border-black p-8 mt-10">
+            <h1 class="bg-red-400 text-center">Number Thing</h1>
+            <label class="p-3">Type in any number from 1-100 and click <i>enter</i>. It will return all the numbers from your number to 100 as well as all the numbers leading up to you inputted number. </label>
+            <input 
+            type="text" 
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 mt-5 mb-5 "
+            placeholder="Type a number 1-100:"
+            >
+            <button onClick="listNumbers()" id="enter-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enter</button>
+        </div>
+
+        <div class="w-50 flex flex-col text-center border-2 border-black p-8 mt-10">
+            <p></p>
+        </div>
+    </main>
+</body>
+</html>
